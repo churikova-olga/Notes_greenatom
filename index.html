@@ -7,7 +7,70 @@
     <title>TODO LIST</title>
 </head>
 <body>
-    <h1>ToDo List</h1>
+    <div class="header">
+        <div class="header_container_logo"><img src = "./img/Logo.svg" alt="Logo" class="header_img_logo"/></div>
+        <h1 class="header_title">ToDo List</h1>
+    </div>
+    
+    <div class="container">
+        <div class="add_list">
+            <div class="add_list_container">
+            <input class="add_list_input" placeholder="Добавить задачу..." /> 
+            <button class="add_list_button"><img src = "./img/Add.svg" alt="Add list" class="add_list_img"/></button>
+            </div>
+        
+        </div>
+        <div class="panel_buttons">
+            <div class="panel_buttons_container">
+                <button class="panel_button_style">
+                    <div class="panel_button_style_text">Стилизация</div>
+                    <img src = "./img/Down_menu.svg" alt="Drop down" class="panel_buttons_img"/>
+                </button>
+
+                <div class="panel_button_style_menu">
+                    <button class="style_menu_button">Четный</button>
+                    <button class="style_menu_button">Нечетный</button>
+                </div>
+
+
+                <button class="panel_button_remove">            
+                    <div class="panel_button_remove_text">Удаление</div>
+                    <img src = "./img/Down_menu.svg" alt="Drop down" class="panel_buttons_img"/>
+                </button>
+
+                <div class="panel_button_remove_menu">
+                    <button class="remove_menu_button">Первый</button>
+                    <button class="remove_menu_button">Последний</button>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main_lists">
+            <!-- <div class="main_lists_notElem"> <span class="main_lists_notElem_text">Список задач пуст</span></div> -->
+
+
+            <div class="main_lists_elem">
+
+                <div class="main_lists_container_checkbox">
+                <input type="checkbox" class="main_lists_checkbox" id="1"value="yes">
+                <label for="1" class="main_lists_label"></label>
+                </div>
+                <div class="main_lists_elem_text"> Text</div>
+                <button class="main_lists_remove"><img  src = "./img/Remove.svg" alt="Remove elem" class="main_lists_img"/></button>
+            </div>
+            <div class="main_lists_elem">
+
+                <div class="main_lists_container_checkbox">
+                <input type="checkbox" class="main_lists_checkbox" id="2"value="yes">
+                <label for="2" class="main_lists_label"></label>
+                </div>
+                <div class="main_lists_elem_text"> TextTextTextTextTextTextTextTextText TextTextTextTextTextText TextTextTextTextTextTextTextTextText</div>
+                <button class="main_lists_remove"> <img  src = "./img/Remove.svg" alt="Remove elem" class="main_lists_img"/></button>
+            </div>
+        </div>
+
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
