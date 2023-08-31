@@ -124,7 +124,7 @@ body{
     font-family:'Trebuchet MS';
    
 }
-.panel_buttons_img{
+.panel_buttons_style_img, .panel_buttons_remove_img{
     min-height: 18px;
     min-width: 20px;
 
@@ -203,7 +203,7 @@ body{
   }
 
   .main_lists_checkbox:not(:disabled):active+.main_lists_label::before {
-    background-color: #007405;
+    background-color: #007405; 
   }
 
   .main_lists_checkbox:checked+.main_lists_label::before {
@@ -252,7 +252,7 @@ body{
     flex-direction: column;
     top: 390px;
     right: 100px;
-    
+    visibility:hidden;
 }
 
 .panel_button_style_menu{
@@ -262,10 +262,10 @@ body{
     flex-direction: column;
     top: 390px;
     right: 300px;
-
+    visibility: hidden;
 }
 
-.style_menu_button, .remove_menu_button{
+.style_menu_button_even, .style_menu_button_odd, .remove_menu_button_last, .remove_menu_button_first {
     box-sizing: border-box;
     min-width: 150px;
     min-height: 40px;
@@ -273,9 +273,18 @@ body{
     border: 1px solid #C7C7C7;
     backdrop-filter: blur(2px);
     cursor: pointer;
+    font-family: 'Trebuchet MS';
+    
 
 }
-.style_menu_button:hover, .remove_menu_button:hover{
+.active{
+    background-color: #8e8d8d;
+}
+.hover:hover{
+    background-color: #FDE046;
+}
+
+.remove_menu_button_last:hover:not(:disabled), .remove_menu_button_first:hover:not(:disabled) {
     background-color: #FDE046;
 }
 
